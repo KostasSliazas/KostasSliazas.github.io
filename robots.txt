@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Sitemap: https://kostassliazas.github.io/sitemap.xml

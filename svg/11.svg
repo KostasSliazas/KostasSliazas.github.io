@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" id="svg2" viewBox="0 0 132.75 132.75" version="1.1" inkscape:version="0.91 r13725" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g id="layer1" transform="translate(-46.84375,22.25)">
+    <path id="rect3848" style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" fill="#000" d="m65.75-22.25c-10.4,0-18.906,8.5063-18.906,18.906v94.938c0,10.4,8.5063,18.906,18.906,18.906h94.938c10.4,0,18.906-8.5063,18.906-18.906v-94.938c0-10.4-8.5063-18.906-18.906-18.906h-94.938zm0,10,94.938,0c5.0329,0,8.9062,3.8733,8.9062,8.9062v94.938c0,5.0329-3.8733,8.9062-8.9062,8.9062h-94.938c-5.0329,0-8.9062-3.8733-8.9062-8.9062v-94.938c0-5.0329,3.8733-8.9062,8.9062-8.9062z"/>
+    <path id="path4" d="m104.98,76.621c0-4.552,3.6901-8.2422,8.2422-8.2422,4.552,0,8.2422,3.6901,8.2422,8.2422,0,4.552-3.6901,8.2422-8.2422,8.2422-4.552,0-8.2422-3.6901-8.2422-8.2422z" style="enable-background:accumulate;color:#000000;">
+      <animate id="p1" attributeName="fill" attributeType="XML" from="#0F0" to="#0F0" dur="0.1s" fill="freeze" begin="0.5s; p7.end"/>
+    </path>
+    <path id="path3" style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m113.22,46.391c-7.5542,0-14.425,3.0885-19.403,8.0704-0.006,0.006,0.006,0.02837,0,0.03434l7.727,7.6927c2.9754-2.9754,7.0918-4.8079,11.676-4.8079,4.5846,0,8.7009,1.8325,11.676,4.8079l7.727-7.6927c-0.006-0.0058,0.006-0.02858,0-0.03434-4.9784-4.9819-11.849-8.0704-19.403-8.0704z">
+      <animate id="p2" attributeName="fill" attributeType="XML" from="#000" to="#0F0" dur="0.1s" fill="freeze" begin="p1.end"/>
+      <animate id="p7" attributeName="fill" attributeType="XML" from="#0F0" to="#000" dur="0.2s" fill="freeze" begin="p6.end"/>
+    </path>
+    <path id="path2" style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m113.22,24.412c-13.623,0-26.005,5.5645-34.96,14.527l7.727,7.727c6.9524-6.9524,16.58-11.23,27.233-11.23,10.654,0,20.281,4.2776,27.233,11.23l7.6927-7.6927c-0.006-0.0058,0.006-0.02851,0-0.03434-8.9554-8.9623-21.303-14.527-34.926-14.527z">
+      <animate id="p3" attributeName="fill" attributeType="XML" from="#000" to="#0F0" dur="0.5s" fill="freeze" begin="p2.end"/>
+      <animate id="p6" attributeName="fill" attributeType="XML" from="#0F0" to="#000" dur="0.5s" fill="freeze" begin="p5.end"/>
+    </path>
+    <path id="path1" style="baseline-shift:baseline;block-progression:tb;color:#000000;direction:ltr;text-indent:0;text-align:start;enable-background:accumulate;text-transform:none;" d="m113.22,2.4669c-19.693,0-37.544,8.0095-50.483,20.949l7.6927,7.727h0.03434c10.931-10.922,26.042-17.686,42.756-17.686,16.723,0,31.823,6.7535,42.756,17.686l7.727-7.727c-12.95-12.94-30.8-20.949-50.49-20.949z">
+      <animate id="p4" attributeName="fill" attributeType="XML" from="#000" to="#0F0" dur="0.5s" fill="freeze" begin="p3.end"/>
+      <animate id="p5" attributeName="fill" attributeType="XML" from="#0F0" to="#000" dur="0.5s" fill="freeze" begin="p4.end"/>
+    </path>
+  </g>
+</svg>

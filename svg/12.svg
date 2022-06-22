@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" viewBox="0 0 169.47 62" inkscape:version="0.91 r13725" xmlns:ns1="http://sozi.baierouge.fr">
+  <defs>
+    <linearGradient id="linearGradient3778">
+      <stop stop-color="#FFF" offset="0"/>
+      <stop stop-color="#FFF" stop-opacity="0" offset="0.49548"/>
+      <stop stop-color="#FFF" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3764" y2="46" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="185.06" y1="46" x1="177.94">
+      <stop stop-color="#81ff2d" offset="0">
+        <animate id="a8" attributeName="offset" dur="0.5s" values="0.8;0.5;0.8" repeatCount="indefinite"/>
+      </stop>
+      <stop stop-color="#000" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3786" y2="46" xlink:href="#linearGradient3778" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="113.8" y1="21" x1="113.8"/>
+    <linearGradient id="linearGradient3833" y2="50.648" xlink:href="#linearGradient3778" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="110.06" gradientTransform="matrix(1.1999999,0,0,2.216017,-20.583915,-47.613892)" y1="60.657" x1="110.06"/>
+    <linearGradient id="linearGradient3880" y2="46" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="113.8" gradientTransform="matrix(1.0762056,0,0,1,-8.67196,0)" y1="46" x1="40.638">
+      <stop stop-color="#000" offset="0"/>
+      <stop stop-color="#000" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4051" y2="46" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="192.53" y1="46" x1="29.062">
+      <stop stop-color="#000" offset="0">
+        <animate id="a1" attributeName="stop-color" begin="1s; a6.end" values="#FFF" dur="0.2s"/>
+      </stop>
+      <stop stop-color="#0F0" offset="0.2">
+        <animate id="a2" attributeName="stop-color" begin="a1.end" values="#FFF" dur="0.2s"/>
+      </stop>
+      <stop stop-color="#0F0" offset="0.4">
+        <animate id="a3" attributeName="stop-color" begin="a2.end" values="#FFF" dur="0.2s"/>
+      </stop>
+      <stop stop-color="#0F0" offset="0.6">
+        <animate id="a4" attributeName="stop-color" begin="a3.end" values="#FFF" dur="0.3s"/>
+      </stop>
+      <stop stop-color="#0F0" offset="0.8">
+        <animate id="a5" attributeName="stop-color" begin="a4.end" values="#F00" dur="0.5s"/>
+      </stop>
+      <stop stop-color="#000" offset="1">
+        <animate id="a6" attributeName="stop-color" begin="a5.end" values="#FFF" dur="0.2s"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g fill-rule="nonzero" transform="translate(-29.0625,-15)">
+    <path style="enable-background:accumulate;color:#000000;" d="M39.825,15c-5.963,0-10.763,5.53-10.763,12.4v37.2c0,6.8696,4.7999,12.4,10.762,12.4h139.91c5.9622,0,10.762-5.5304,10.762-12.4v-6.2h3.8004c2.3423,0,4.2376-2.145,4.2376-4.8438v-15.112c0-2.6988-1.8953-4.8825-4.2376-4.8825h-3.8004v-6.1612c0-6.8696-4.7999-12.4-10.762-12.4l-139.9-0.001z" fill="#008000"/>
+    <path style="enable-background:accumulate;color:#000000;" fill="url(#linearGradient3764)" d="m45.062,21c-5.54,0-10,4.46-10,10v30c0,5.54,4.46,10,10,10h130c5.54,0,10-4.46,10-10v-5h3.5312c2.1764,0,3.9375-1.7298,3.9375-3.9062v-12.188c0-2.1764-1.7611-3.9375-3.9375-3.9375h-3.5312v-4.9688c0-5.54-4.46-10-10-10h-130z"/>
+    <path style="enable-background:accumulate;color:#000000;" fill="url(#linearGradient3880)" d="M39.825,15c-5.963,0-10.763,5.53-10.763,12.4v37.2c0,6.8696,4.7999,12.4,10.762,12.4h139.91c5.9622,0,10.762-5.5304,10.762-12.4v-6.2h3.8004c2.3423,0,4.2376-2.145,4.2376-4.8438v-15.112c0-2.6988-1.8953-4.8825-4.2376-4.8825h-3.8004v-6.1612c0-6.8696-4.7999-12.4-10.762-12.4l-139.9-0.001z"/>
+    <path opacity="0.8" style="enable-background:accumulate;color:#000000;" d="m45.062,21c-5.54,0-10,4.46-10,10v30c0,5.54,4.46,10,10,10h130c5.54,0,10-4.46,10-10v-5h3.5312c2.1764,0,3.9375-1.7298,3.9375-3.9062v-12.188c0-2.1764-1.7611-3.9375-3.9375-3.9375h-3.5312v-4.9688c0-5.54-4.46-10-10-10h-130z" fill="url(#linearGradient4051)"/>
+    <path style="enable-background:accumulate;color:#000000;" fill="#4d4d4d" d="m185.06,35.969,0,20.031,3.5312,0c2.1764,0,3.9375-1.7298,3.9375-3.9062v-12.188c0-2.1764-1.7611-3.9375-3.9375-3.9375h-3.5312z"/>
+    <path style="enable-background:accumulate;color:#000000;" fill="url(#linearGradient3786)" d="m45.062,21c-5.54,0-10,4.46-10,10v30c0,5.54,4.46,10,10,10h130c5.54,0,10-4.46,10-10v-5h3.5312c2.1764,0,3.9375-1.7298,3.9375-3.9062v-12.188c0-2.1764-1.7611-3.9375-3.9375-3.9375h-3.5312v-4.9688c0-5.54-4.46-10-10-10h-130z"/>
+    <path style="enable-background:accumulate;color:#000000;" d="M35.094,30.562c-0.006,0.146-0.032,0.291-0.032,0.438v15.281h157.47v-6.375c0-2.1764-1.7611-3.9375-3.9375-3.9375h-3.5312v-4.9688c0-0.14699-0.025-0.29209-0.0312-0.4375h-149.94z" fill="url(#linearGradient3833)"/>
+  </g>
+</svg>
