@@ -5,7 +5,7 @@
   resource.setAttribute('href', 'css/gall7.min.css')
   document.getElementsByTagName('head')[0].appendChild(resource)
   const getConfig = typeof w['IGConfig'] === 'undefined' || w['IGConfig'] // eslint-disable-line
-  const IG = Object.create(null)
+  const IG = {}
   IG.folder = getConfig['folder'] || 'big/' // eslint-disable-line
   IG.imageContainer = getConfig['imageContainer'] || 'images-container' // eslint-disable-line
   IG.timer = typeof getConfig['delaySeconds'] === 'number' && isFinite(getConfig['delaySeconds']) ? getConfig['delaySeconds'] * 1000 : 2000 // eslint-disable-line
