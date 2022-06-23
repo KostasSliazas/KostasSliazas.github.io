@@ -81,14 +81,12 @@
   // autoplay and image loaded helper to remove class 'loader'
   IG.loadComplete = function () {
     // if (typeof e !== 'undefined' && e.parentElement) e.parentElement.className = ''
-    console.log(this.isAutoPlayOn)
     this.insi.className = ''
     this.isAutoPlayOn && this.autoPlayLoop()
   }
 
   // image is loaded method
   IG.loaded = function () {
-    console.log('loaded')
     this.imgs.onload = this.loadComplete.bind(this)
   }
 
@@ -164,7 +162,6 @@
     this.imgs.src = fileName.slice(0, -3) === 'svg' ? fullName : fullName.replace(fileName, this.folder + fileName)
 
     this.imgs.onerror = function (e) {
-      console.log('ddd')
       e.target.src = this.imagesArray[this.indexOfImage].src
     }.bind(this)
 
