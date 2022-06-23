@@ -121,7 +121,6 @@
 
   // clear method to reset all values
   IG.clear = function () {
-    console.log('clear')
     this.isAutoPlayOn = false
     clearTimeout(this.timeOut)
     this.timeOut = 0
@@ -133,7 +132,6 @@
 
   // function on close
   IG.close = function () {
-    console.log('close')
     this.clear()
     this.isActive = false
     this.imag.className = 'hide7'
