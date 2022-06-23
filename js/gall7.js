@@ -69,11 +69,11 @@
     this.isAutoPlayOn = true
     if (IG.showButtons) this.play.className = 'acts7'
     this.timeOut = setTimeout(function () {
-      this.right().show()
       if (!this.showButtonsOnPlay) {
         this.left.className = this.rigt.className = this.clos.className = 'hide7'
         if (this.showButtons) this.foot.className = this.onow.className = 'hide7'
       }
+      this.right().show()
       this.indexOfImage === this.imagesArray.length - 1 && this.clear()
     }.bind(this), this.timer)
   }
@@ -88,17 +88,6 @@
   // image is loaded method
   IG.loaded = function () {
     this.imgs.onload = this.loadComplete.bind(this)
-  }
-
-  // clear method to reset all values
-  IG.clear = function () {
-    clearTimeout(this.timeOut)
-    this.timeOut = 0
-    this.isAutoPlayOn = false
-    if (this.showButtons) this.foot.className = this.onow.className = this.play.className = ''
-    if (!this.showButtonsOnPlay) this.clos.className = ''
-    this.leftRigthBtnsShow()
-    return this
   }
 
   // downloads method
@@ -130,8 +119,21 @@
     return this
   }
 
+  // clear method to reset all values
+  IG.clear = function () {
+    console.log('clear')
+    this.isAutoPlayOn = false
+    clearTimeout(this.timeOut)
+    this.timeOut = 0
+    if (this.showButtons) this.foot.className = this.onow.className = this.play.className = ''
+    if (!this.showButtonsOnPlay) this.clos.className = ''
+    this.leftRigthBtnsShow()
+    return this
+  }
+
   // function on close
   IG.close = function () {
+    console.log('close')
     this.clear()
     this.isActive = false
     this.imag.className = 'hide7'
@@ -214,13 +216,12 @@
   w.addEventListener('keyup', function (e) {
     const key = e.key
     if (!IG.isActive || e.isComposing || key === 229) return
+    if (key === ' ') IG.isAutoPlayOn ? IG.clear() : IG.autoPlayLoop()
     key === 'ArrowLeft' && IG.clear().lefts().show()
     key === 'ArrowRight' && IG.clear().right().show()
     key === 'Escape' && IG.close()
-    if (key === ' ' && IG.isAutoPlayOn) IG.clear()
-    else IG.autoPlayLoop()
-    e.preventDefault()
-    e.stopImmediatePropagation()
+    // e.preventDefault()
+    // e.stopImmediatePropagation()
   })
   // everything to handle swipe left/right
   // https://code-maven.com/swipe-left-right-vanilla-javascript
