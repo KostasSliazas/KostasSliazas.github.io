@@ -64,18 +64,10 @@
   }
   d.body.appendChild(IG.frag)// append document fragment to <body>
 
-  // autoplay method
-  IG.autoPlay = function () {
-    if (this.isAutoPlayOn) this.clear()
-    else {
-      this.isAutoPlayOn = true
-      if (IG.showButtons) this.play.className = 'acts7'
-      this.loaded()
-    }
-  }
-
   // autoplay method loop
   IG.autoPlayLoop = function () {
+    this.isAutoPlayOn = true
+    if (IG.showButtons) this.play.className = 'acts7'
     this.timeOut = setTimeout(function () {
       this.right().show()
       if (!this.showButtonsOnPlay) {
@@ -87,15 +79,17 @@
   }
 
   // autoplay and image loaded helper to remove class 'loader'
-  IG.loadComplete = function (e) {
+  IG.loadComplete = function () {
     // if (typeof e !== 'undefined' && e.parentElement) e.parentElement.className = ''
+    console.log(this.isAutoPlayOn)
     this.insi.className = ''
     this.isAutoPlayOn && this.autoPlayLoop()
   }
 
   // image is loaded method
-  IG.loaded = function (e) {
-    this.imgs.onload = this.loadComplete(this.imgs)
+  IG.loaded = function () {
+    console.log('loaded')
+    this.imgs.onload = this.loadComplete.bind(this)
   }
 
   // clear method to reset all values
@@ -154,23 +148,23 @@
 
   // show image method to show image when loaded
   IG.show = function () {
-    this.insi.className = 'spin7'
     if (!this.isActive) { // don't rewrite values if active and set active gallery
       this.isActive = true
       d.documentElement.style.overflow = 'hidden'// this stops from scroll when tab pressed and hides scrollbar
       this.imag.className = ''
-      // this.irig.focus()
     }
     this.leftRigthBtnsShow()
+    this.insi.className = 'spin7'
     this.imgs && this.insi.removeChild(this.imgs) // if image exist remove and later recreate it
     this.imgs = d.createElement('img')
     const fullName = this.imagesArray[this.indexOfImage].src
     const fileName = fullName.split('/').pop()
     this.loaded()
-    this.imgs.src = fileName.slice(0, -3) === 'svg' ? fullName : fullName.replace(fileName, this.folder + fileName)
     this.insi.appendChild(this.imgs)
+    this.imgs.src = fileName.slice(0, -3) === 'svg' ? fullName : fullName.replace(fileName, this.folder + fileName)
 
     this.imgs.onerror = function (e) {
+      console.log('ddd')
       e.target.src = this.imagesArray[this.indexOfImage].src
     }.bind(this)
 
@@ -214,7 +208,7 @@
     if (target === 'rigt7' || target === 'irig7') IG.clear().right().show()
     if (target === 'left7' || target === 'ilef7') IG.clear().lefts().show()
     if (target === 'cent7' && IG.isAutoPlayOn) IG.clear()
-    target === 'play7' && IG.autoPlay()
+    target === 'play7' && IG.autoPlayLoop()
     target === 'clos7' && IG.close()
     e.stopImmediatePropagation()
   })
@@ -226,7 +220,8 @@
     key === 'ArrowLeft' && IG.clear().lefts().show()
     key === 'ArrowRight' && IG.clear().right().show()
     key === 'Escape' && IG.close()
-    key === ' ' && IG.autoPlay()
+    if (key === ' ' && IG.isAutoPlayOn) IG.clear()
+    else IG.autoPlayLoop()
     e.preventDefault()
     e.stopImmediatePropagation()
   })
