@@ -5,7 +5,7 @@
   resource.setAttribute('href', 'css/gall7.min.css')
   document.getElementsByTagName('head')[0].appendChild(resource)
   const getConfig = typeof w['IGConfig'] === 'undefined' || w['IGConfig'] // eslint-disable-line
-  const IG = {}
+  const IG = Object.create(null)
   IG.folder = getConfig['folder'] || 'big/' // eslint-disable-line
   IG.imageContainer = getConfig['imageContainer'] || 'images-container' // eslint-disable-line
   IG.timer = typeof getConfig['delaySeconds'] === 'number' && isFinite(getConfig['delaySeconds']) ? getConfig['delaySeconds'] * 1000 : 2000 // eslint-disable-line
@@ -70,7 +70,7 @@
     else {
       this.isAutoPlayOn = true
       if (IG.showButtons) this.play.className = 'acts7'
-      this.loaded(this.imgs, this.imgs.src)
+      this.loaded()
     }
   }
 
@@ -88,14 +88,14 @@
 
   // autoplay and image loaded helper to remove class 'loader'
   IG.loadComplete = function (e) {
-    if (typeof e !== 'undefined' && e.parentElement) e.parentElement.className = ''
+    // if (typeof e !== 'undefined' && e.parentElement) e.parentElement.className = ''
+    this.insi.className = ''
     this.isAutoPlayOn && this.autoPlayLoop()
   }
 
   // image is loaded method
-  IG.loaded = function (e, src) {
-    e.onload = this.loadComplete.bind(this, e)
-    e.src = src
+  IG.loaded = function (e) {
+    this.imgs.onload = this.loadComplete(this.imgs)
   }
 
   // clear method to reset all values
@@ -161,21 +161,23 @@
       this.imag.className = ''
       // this.irig.focus()
     }
-
     this.leftRigthBtnsShow()
-    const image = this.imagesArray[this.indexOfImage]
-    const fileName = image.src.split('/').pop()// get image src file name
+    this.imgs && this.insi.removeChild(this.imgs) // if image exist remove and later recreate it
+    this.imgs = d.createElement('img')
+    const fullName = this.imagesArray[this.indexOfImage].src
+    const fileName = fullName.split('/').pop()
+    this.loaded()
+    this.imgs.src = fileName.slice(0, -3) === 'svg' ? fullName : fullName.replace(fileName, this.folder + fileName)
+    this.insi.appendChild(this.imgs)
+
+    this.imgs.onerror = function (e) {
+      e.target.src = this.imagesArray[this.indexOfImage].src
+    }.bind(this)
 
     if (this.showButtons) {
       this.alts.innerText = decodeURI(fileName)
       this.fine.innerText = Number(this.indexOfImage) + 1 + '/' + this.imagesArray.length
     }
-    this.imgs && this.insi.removeChild(this.insi.firstChild)// if image exist remove and later recreate it
-    this.imgs = d.createElement('img')
-    this.imgs.setAttribute('alt', image.getAttribute('alt') || 'No alt attribute')
-    this.imgs.onerror = function (e) { e.target.src = image.src }
-    this.loaded(this.imgs, image.src.substr(image.src.length - 3) === 'svg' ? image.src : image.src.replace(fileName, this.folder + fileName))
-    this.insi.appendChild(this.imgs)
   }
 
   // listen for clicked on image element and load show method
