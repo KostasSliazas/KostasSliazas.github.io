@@ -199,25 +199,25 @@
   if (containersArray[0] && containersArray[0].tagName === 'BODY') d.body.addEventListener('click', function (e) { IG.listenForIG(e) })
   else for (let k = containersArray.length - 1; k >= 0; k--) containersArray[k].addEventListener('click', function (e) { IG.listenForIG(e) })
 
-  const loadings = {
-    ArrowLeft: function () { IG.clear().lefts().show() },
-    ArrowRight: function () { IG.clear().right().show() },
-    Escape: function () { IG.close() },
+  const k = {
+    'ArrowLeft': function () { IG.clear().lefts().show() },
+    'ArrowRight': function () { IG.clear().right().show() },
+    'Escape': function () { IG.close() },
     ' ': function () { IG.isAutoPlayOn ? IG.clear() : IG.autoPlayLoop() }
   }
 
-  const loadings1 = {
-    left7: loadings.ArrowLeft,
-    rigt7: loadings.ArrowRight,
-    play7: loadings[' '],
-    clos7: loadings.Escape,
-    wdow7: function () { if (IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads() }
+  const c = {
+    'left7': k['ArrowLeft'],
+    'rigt7': k['ArrowRight'],
+    'play7': k[' '],
+    'clos7': k['Escape'],
+    'wdow7': function () { if (IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads() }
   }
 
   // add click addEventListener to image div (gallery window)
   IG.imag.addEventListener('click', function (e) {
     const target = e.target.id
-    const load = loadings1[target]
+    const load = c[target]
     if (!load) return IG.isAutoPlayOn && IG.clear()
     load()
     // if (target === 'wdow7' && IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads()
@@ -233,7 +233,7 @@
   w.addEventListener('keyup', function (e) {
     const key = e.key
     if (!IG.isActive || e.isComposing || key === 229) return
-    loadings[key]()
+    k[key]()
     // key === 'ArrowLeft' && IG.clear().lefts().show()
     // key === 'ArrowRight' && IG.clear().right().show()
     // key === 'Escape' && IG.close()
