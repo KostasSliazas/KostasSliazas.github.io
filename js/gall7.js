@@ -68,12 +68,13 @@
   IG.autoPlayLoop = function () {
     this.isAutoPlayOn = true
     if (IG.showButtons) this.play.className = 'acts7'
+
     this.timeOut = setTimeout(function () {
+      this.right().show()
       if (!this.showButtonsOnPlay) {
         this.left.className = this.rigt.className = this.clos.className = 'hide7'
         if (this.showButtons) this.foot.className = this.onow.className = 'hide7'
       }
-      this.right().show()
       this.indexOfImage === this.imagesArray.length - 1 && this.clear()
     }.bind(this), this.timer)
   }
@@ -121,9 +122,9 @@
 
   // clear method to reset all values
   IG.clear = function () {
-    this.isAutoPlayOn = false
     clearTimeout(this.timeOut)
     this.timeOut = 0
+    this.isAutoPlayOn = false
     if (this.showButtons) this.foot.className = this.onow.className = this.play.className = ''
     if (!this.showButtonsOnPlay) this.clos.className = ''
     this.leftRigthBtnsShow()
@@ -198,15 +199,33 @@
   if (containersArray[0] && containersArray[0].tagName === 'BODY') d.body.addEventListener('click', function (e) { IG.listenForIG(e) })
   else for (let k = containersArray.length - 1; k >= 0; k--) containersArray[k].addEventListener('click', function (e) { IG.listenForIG(e) })
 
+  const loadings = {
+    ArrowLeft: function () { IG.clear().lefts().show() },
+    ArrowRight: function () { IG.clear().right().show() },
+    Escape: function () { IG.close() },
+    ' ': function () { IG.isAutoPlayOn ? IG.clear() : IG.autoPlayLoop() }
+  }
+
+  const loadings1 = {
+    left7: loadings.ArrowLeft,
+    rigt7: loadings.ArrowRight,
+    play7: loadings[' '],
+    clos7: loadings.Escape,
+    wdow7: function () { if (IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads() }
+  }
+
   // add click addEventListener to image div (gallery window)
   IG.imag.addEventListener('click', function (e) {
     const target = e.target.id
-    if (target === 'wdow7' && IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads()
-    if (target === 'rigt7' || target === 'irig7') IG.clear().right().show()
-    if (target === 'left7' || target === 'ilef7') IG.clear().lefts().show()
-    if (target === 'cent7' && IG.isAutoPlayOn) IG.clear()
-    target === 'play7' && IG.autoPlayLoop()
-    target === 'clos7' && IG.close()
+    const load = loadings1[target]
+    if (!load) return loadings[' ']()
+    load()
+    // if (target === 'wdow7' && IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads()
+    // if (target === 'rigt7' || target === 'irig7') IG.clear().right().show()
+    // if (target === 'left7' || target === 'ilef7') IG.clear().lefts().show()
+    // if (target === 'cent7' && IG.isAutoPlayOn) IG.clear()
+    // target === 'play7' && IG.autoPlayLoop()
+    // target === 'clos7' && IG.close()
     e.stopImmediatePropagation()
   })
 
@@ -214,12 +233,13 @@
   w.addEventListener('keyup', function (e) {
     const key = e.key
     if (!IG.isActive || e.isComposing || key === 229) return
-    if (key === ' ') IG.isAutoPlayOn ? IG.clear() : IG.autoPlayLoop()
-    key === 'ArrowLeft' && IG.clear().lefts().show()
-    key === 'ArrowRight' && IG.clear().right().show()
-    key === 'Escape' && IG.close()
-    // e.preventDefault()
-    // e.stopImmediatePropagation()
+    loadings[key]()
+    // key === 'ArrowLeft' && IG.clear().lefts().show()
+    // key === 'ArrowRight' && IG.clear().right().show()
+    // key === 'Escape' && IG.close()
+    // if (key === ' ') IG.isAutoPlayOn ? IG.clear() : IG.autoPlayLoop()
+    e.preventDefault()
+    e.stopImmediatePropagation()
   })
   // everything to handle swipe left/right
   // https://code-maven.com/swipe-left-right-vanilla-javascript
