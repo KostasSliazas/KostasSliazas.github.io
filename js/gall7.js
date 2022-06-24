@@ -108,7 +108,7 @@
   IG.lefts = function () {
     if (this.indexOfImage > 0) this.indexOfImage--
     else this.indexOfImage = this.imagesArray.length - 1
-    this.ilef.focus()
+    // this.ilef.focus()
     return this
   }
 
@@ -116,7 +116,7 @@
   IG.right = function () {
     if (this.indexOfImage < this.imagesArray.length - 1) this.indexOfImage++
     else this.indexOfImage = 0
-    this.irig.focus()
+    // this.irig.focus()
     return this
   }
 
@@ -218,7 +218,7 @@
   IG.imag.addEventListener('click', function (e) {
     const target = e.target.id
     const load = loadings1[target]
-    if (!load) return loadings[' ']()
+    if (!load) return IG.isAutoPlayOn && IG.clear()
     load()
     // if (target === 'wdow7' && IG.imagesArray[IG.indexOfImage].src.split('/').pop() !== IG.onow.dataset.selected) IG.clear().downloads()
     // if (target === 'rigt7' || target === 'irig7') IG.clear().right().show()
@@ -226,7 +226,7 @@
     // if (target === 'cent7' && IG.isAutoPlayOn) IG.clear()
     // target === 'play7' && IG.autoPlayLoop()
     // target === 'clos7' && IG.close()
-    e.stopImmediatePropagation()
+    // e.stopImmediatePropagation()
   })
 
   // add keyup addEventListener to image div (gallery window)
