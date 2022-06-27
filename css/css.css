@@ -547,7 +547,6 @@ a:hover {
   font-size: 1em;
   counter-increment: counter;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px #eee;
   overflow: hidden
 }
 
@@ -592,32 +591,15 @@ a:hover {
   cursor: pointer;
   text-align: center;
   background: #fff;
-  transition: .2s .4s linear
+  transition: 0s .2s linear
 }
 
 .imgDiv img:hover {
-  filter: grayscale(0);
   transform: scale(1.2)
 }
 
 
 
-/* #footer::after,
-.paveik span::before {
-  display: block;
-  text-align: center;
-  font-size: 10px
-} */
-
-/* .paveik span::before {
-  content: counter(counter);
-  line-height: 1;
-  position: absolute;
-  z-index: 1;
-  max-height: 192px;
-  width: 12px;
-  height: 12px
-} */
 
 .wraper {
   height: 100%;
@@ -1298,10 +1280,7 @@ ul {
   box-shadow: 0 0 0 1px #222;
 }
 
-#themesw:checked~.wrp .allcontainer,
-#themesw:checked~.wrp .paveik span {
-  box-shadow: 0 0 0 1px #000
-}
+
 
 #themesw:checked~.wrp .imgDiv img,
 #themesw:checked~.bg,
@@ -1362,11 +1341,6 @@ ul {
   .wrp,
   .box {
     background: #333
-  }
-
-  .wrp .allcontainer,
-  .wrp .paveik span {
-    box-shadow: 0 0 0 1px #000
   }
 
   .bg,
@@ -1438,10 +1412,7 @@ ul {
     background: #fafafa
   }
 
-  #themesw:checked~.wrp .allcontainer,
-  #themesw:checked~.wrp .paveik span {
-    box-shadow: 0 0 0 2px #eee
-  }
+
 
   #themesw:checked~.bg,
   #themesw:checked~.wrp .bg {
