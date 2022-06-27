@@ -1085,7 +1085,6 @@ ul {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 2px;
-  box-shadow: 0 0 0 2px #eee;
   position: relative;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
