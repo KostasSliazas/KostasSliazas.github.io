@@ -321,17 +321,15 @@ a {
 a:focus {
   outline: 0
 }
-
+a:visited,
 a:active,
 a:focus,
-a:link,
-a:visited {
-  text-decoration: none
+a:link{
+  text-decoration:1px underline dotted;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: inherit;
+  text-decoration: 1px underline solid;
   cursor: pointer
 }
 
@@ -1467,16 +1465,8 @@ ul {
 }
 
 .btnsd {
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 12px;
   padding: 0 1.5em;
   line-height: 3;
-}
-
-.btnsd:active {
-  position: relative;
-  top: 1px
 }
 
 .cookieinfo-close {
