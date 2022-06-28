@@ -325,7 +325,7 @@ a:visited,
 a:active,
 a:focus,
 a:link{
-  text-decoration:1px underline dotted;
+  text-decoration:1px underline dashed;
 }
 
 a:hover {
