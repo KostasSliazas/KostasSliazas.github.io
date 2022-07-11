@@ -1,11 +1,11 @@
 :root {
   --color1: #FEFEFE;
   --color2: #FCFBFD;
-  --color3: #FCF6EA;
+  --color3: #746854;
   --color4: #6C6C75;
   --dcolor1: #4A4A4A;
   --dcolor2: #4A444E;
-  --dcolor3: #4A4B44;
+  --dcolor3: #c2c5ae;
   --dcolor4: #cacaca;
   --col1: var(--color1);
   --col2: var(--color2);
@@ -19,8 +19,8 @@
   --col4: var(--dcolor4);
 }
 .box:target {
-  background:var(--color4);
-  color: var(--color1);
+  filter:drop-shadow(0 0 7px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 #themesw:checked~.wraper #theme::before {
   content: "\263C"
@@ -867,11 +867,11 @@ nav {
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  box-shadow: 0 1px 2px #000000b7;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .menu {
-  background: var(--col4);
+  background: var(--col1);
   padding: 0 24px;
   text-align: right;
 }
@@ -895,8 +895,8 @@ nav {
   overflow: hidden;
   display: none;
   min-width: 192px;
-  background: var(--col4);
-  box-shadow: 0 1px 2px #000000b7;
+  background: var(--col1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .exp li a {
@@ -919,11 +919,10 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--col3);
-  font-weight: 700;
 }
 
 .nav a:hover {
-  color: var(--col1);
+  color: var(--col4);
 }
 
 .nav:not(a) {
@@ -1062,14 +1061,14 @@ ul {
   }
   .nav a:focus,
   .nav a:hover {
-    background: var(--col3);
+    background: var(--col2);
     color: var(--col4);
   }
   .exp li ul {
     position: relative;
     box-shadow: none;
     text-indent: 24px;
-    background: var(--col3);
+    background: var(--col2);
   }
   .exp li ul a {color: var(--col4);}
 
