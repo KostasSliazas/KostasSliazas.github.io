@@ -356,9 +356,7 @@ span {
 
 .class10,
 h5 {
-  font-size: .625em;
-  line-height: 2.4em;
-  text-align: right
+  text-align: center
 }
 
 .class10 {
@@ -785,7 +783,6 @@ h2:after {
 }
 
 #leftcolumn p {
-  text-align: justify;
   text-align-last: center
 }
 
