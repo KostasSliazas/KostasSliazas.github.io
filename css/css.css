@@ -1,8 +1,8 @@
 :root {
   --color1: #FEFEFE;
   --color2: #FCFBFD;
-  --color3: #746854;
-  --color4: #6C6C75;
+  --color3: #707c6f;
+  --color4: #384537;
   --dcolor1: #4A4A4A;
   --dcolor2: #4A444E;
   --dcolor3: #c2c5ae;
@@ -725,8 +725,11 @@ header {
 header {
   height: 24px;
   overflow: hidden;
+  transition: .1s height;
   position: relative;
-  z-index: 998
+  background: var(--col2);
+  z-index: 998;
+  background: repeating-linear-gradient(90deg, transparent 0px, transparent 6px, rgba(208, 208, 208, 0.2) 6px, rgba(208, 208, 208, 0.2) 7px), repeating-linear-gradient(0deg, transparent 0px, transparent 6px, rgba(208, 208, 208, 0.2) 6px, rgba(208, 208, 208, 0.2) 7px) repeat fixed 0% 0%
 }
 
 .zero {
@@ -742,9 +745,9 @@ header {
   margin: 0 auto;
   display: block;
   height: 100%;
-  text-align: center;
+  text-align: right;
   position: relative;
-  color: var(--col4);
+  color: var(--col3);
 }
 
 #logo {
