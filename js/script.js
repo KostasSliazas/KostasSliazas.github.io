@@ -34,16 +34,20 @@
         })
   }
   ready(function () {
+    const themeSwitch = document.querySelector('#themesw')
+    themeSwitch.checked = window.localStorage.getItem('theme7') === 'true' || window.matchMedia('(prefers-color-scheme:dark)').matches
+    themeSwitch.addEventListener('change', e => e.currentTarget.checked ? window.localStorage.setItem('theme7', 'true') : window.localStorage.removeItem('theme7'))
+
     // const resource = document.createElement('link')
     // resource.setAttribute('rel', 'stylesheet')
     // resource.setAttribute('href', 'https://fonts.googleapis.com/css?family=K2D:400,400i&amp;subset=latin-ext&display=swap')
     // resource.setAttribute('type', 'text/css')
     // document.getElementsByTagName('head')[0].appendChild(resource)
 
-    const link = document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link')
-    link.setAttribute('rel', 'canonical')
-    link.setAttribute('href', location.protocol + '//' + location.host + location.pathname)
-    document.head.appendChild(link)
+    // const link = document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link')
+    // link.setAttribute('rel', 'canonical')
+    // link.setAttribute('href', location.protocol + '//' + location.host + location.pathname)
+    // document.head.appendChild(link)
 
     const ext1 = document.createElement('script')
     ext1.setAttribute('src', './js/appinstall.min.js')
@@ -104,8 +108,8 @@
     document.addEventListener('click', menu.bind(this))
     // document.querySelectorAll('a').forEach(e => e.addEventListener('dragstart', e => e.preventDefault()))
     allcon.addEventListener('scroll', debounce(function () {
-      allcon.scrollTop > 48 && allcon.offsetWidth > 480 ? header.classList.add('zero') : header.classList.remove('zero')
-    }, 60))
+      allcon.scrollTop > 9 && allcon.offsetWidth > 480 ? header.classList.add('zero') : header.classList.remove('zero')
+    }, 9))
 
     if (document.addEventListener) {
       document.addEventListener('contextmenu', function (e) {
