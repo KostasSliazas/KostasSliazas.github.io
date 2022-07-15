@@ -116,8 +116,9 @@
         e.preventDefault()
       }, false)
     } else {
-      document.attachEvent('oncontextmenu', function () {
-        window.event.returnValue = false
+      document.attachEvent('oncontextmenu', function (e) {
+        e.preventDefault()
+        return false
       })
     }
   })
