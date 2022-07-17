@@ -425,6 +425,7 @@ a:hover {
   width: 48px;
   border-radius: 50%;
   line-height: 48px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   background: var(--col1);
   transition: .2s .4s opacity
 }
@@ -912,11 +913,11 @@ nav {
   transform: translateZ(0);
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--col3);
+  color: var(--col4);
 }
 
 .nav a:hover {
-  color: var(--col4);
+  color: var(--col3);
 }
 
 .nav:not(a) {
