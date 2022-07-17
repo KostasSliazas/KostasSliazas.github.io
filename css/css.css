@@ -425,7 +425,7 @@ a:hover {
   width: 48px;
   border-radius: 50%;
   line-height: 48px;
-  background: rgba(0, 0, 0, .5);
+  background: var(--col1);
   transition: .2s .4s opacity
 }
 
@@ -619,8 +619,6 @@ a:hover {
 
 .paveik span {
   font-size: 1em;
-  counter-increment: counter;
-  border-radius: 2px;
   overflow: hidden
 }
 
@@ -665,14 +663,8 @@ a:hover {
   cursor: pointer;
   text-align: center;
   background: #fff;
-  transition: 0s .2s linear
+
 }
-
-.imgDiv img:hover {
-  transform: scale(1.2)
-}
-
-
 
 
 .wraper {
