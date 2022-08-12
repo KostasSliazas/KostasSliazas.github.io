@@ -20,25 +20,25 @@
   --col4: var(--dcolor4);
 }
 
-@keyframes border {
+@keyframes borders {
   0% {
-    border-image: linear-gradient(0deg, #0f0 1px, transparent) 1/1;
+    border-image: linear-gradient(0deg, var(--col3) 1px, transparent) 1/1;
   }
 
   25% {
-    border-image: linear-gradient(90deg, #0f0 1px, transparent) 1/1;
+    border-image: linear-gradient(90deg, var(--col3) 1px, transparent) 1/1;
   }
 
   50% {
-    border-image: linear-gradient(180deg, #0f0 1px, transparent) 1/1;
+    border-image: linear-gradient(180deg, var(--col3) 1px, transparent) 1/1;
   }
 
   75% {
-    border-image: linear-gradient(270deg, #0f0 1px, transparent) 1/1;
+    border-image: linear-gradient(270deg, var(--col3) 1px, transparent) 1/1;
   }
 
   100% {
-    border-image: linear-gradient(360deg, #0f0 1px, transparent) 1/1;
+    border-image: linear-gradient(360deg, var(--col3) 1px, transparent) 1/1;
   }
 }
 
@@ -57,7 +57,7 @@
 }
 .box:target:before {
   box-shadow: 0 1px 17px rgba(0, 0, 0, .2);
-  animation: border 1s steps(4) 2;
+  animation: borders .7s steps(4) 7;
 }
 #themesw:checked~.wraper #theme::before {
   content: "\263C"
