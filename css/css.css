@@ -12,17 +12,53 @@
   --col3: var(--color3);
   --col4: var(--color4);
 }
-#themesw:checked~.wraper{
+
+#themesw:checked~.wraper {
   --col1: var(--dcolor1);
   --col2: var(--dcolor2);
   --col3: var(--dcolor3);
   --col4: var(--dcolor4);
 }
-.box:target {
-  filter:drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+@keyframes border {
+  0% {
+    border-image: linear-gradient(0deg, #0f0 1px, transparent) 1/1;
+  }
+
+  25% {
+    border-image: linear-gradient(90deg, #0f0 1px, transparent) 1/1;
+  }
+
+  50% {
+    border-image: linear-gradient(180deg, #0f0 1px, transparent) 1/1;
+  }
+
+  75% {
+    border-image: linear-gradient(270deg, #0f0 1px, transparent) 1/1;
+  }
+
+  100% {
+    border-image: linear-gradient(360deg, #0f0 1px, transparent) 1/1;
+  }
 }
 
+.box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(100% + 1px);
+  width: calc(100% + 1px);
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  pointer-events: none;
+  border: 1px solid var(--col2);
+}
+.box:target:before {
+  box-shadow: 0 1px 17px rgba(0, 0, 0, .2);
+  animation: border 1s steps(4) 2;
+}
 #themesw:checked~.wraper #theme::before {
   content: "\263C"
 }
@@ -318,15 +354,18 @@ html {
 .box {
   padding: 0 12px 12px;
   margin-bottom: 24px;
-  overflow-x: hidden;
+  position: relative;
+  border: 1px solid transparent;
   transition: .3s box-shadow linear, 1s filter;
 }
+
 h2:before,
 h2:after,
 .wrp {
   background: var(--col2);
   color: var(--col4);
 }
+
 .theme,
 .box {
   background: var(--col1)
@@ -334,8 +373,7 @@ h2:after,
 
 .box h2 {
   font-size: 1em;
-  width: 180%;
-  margin: 0 0 0 -25%;
+  overflow: hidden;
 }
 
 #threed,
@@ -723,9 +761,11 @@ header {
   background: var(--col2);
   z-index: 998;
 }
-.dots{
-  background: linear-gradient(45deg, var(--col3) 0,transparent 1px) 0 0/7px 7px,var(--col2);
+
+.dots {
+  background: linear-gradient(45deg, var(--col3) 0, transparent 1px) 0 0/7px 7px, var(--col2);
 }
+
 .zero {
   height: 0
 }
@@ -898,7 +938,8 @@ nav {
   position: relative;
   direction: ltr;
 }
-.exp li{
+
+.exp li {
   position: relative;
   padding: 1px 0 0;
 }
@@ -963,7 +1004,8 @@ ul {
     max-width: max-content;
     margin: 0 auto
   }
-  .exp li ul li:before{
+
+  .exp li ul li:before {
     content: '';
     position: absolute;
     height: 1px;
@@ -973,8 +1015,9 @@ ul {
     left: 10%;
     box-sizing: border-box;
   }
+
   #menus>li:last-child:before,
-  #menus>li:after{
+  #menus>li:after {
     content: '';
     position: absolute;
     height: 50%;
@@ -985,7 +1028,8 @@ ul {
     box-sizing: border-box;
     top: 25%;
   }
-  #menus>li:last-child:before{
+
+  #menus>li:last-child:before {
     right: 0;
   }
 }
@@ -1005,8 +1049,9 @@ ul {
 }
 
 @media only screen and (max-width:481px) {
+
   #menus>li:last-child:after,
-  .exp li:before{
+  .exp li:before {
     content: '';
     position: absolute;
     height: 1px;
@@ -1016,10 +1061,14 @@ ul {
     left: 10%;
     box-sizing: border-box;
   }
+
   .exp>li:last-child::after {
     bottom: 0;
   }
-  .exp li:before{top:0}
+
+  .exp li:before {
+    top: 0
+  }
 
   .act~.navwrap>.menu,
   .act~.navwrap {
@@ -1054,18 +1103,23 @@ ul {
     overflow-y: auto;
     overscroll-behavior-y: contain
   }
+
   .nav a:focus,
   .nav a:hover {
     background: var(--col2);
     color: var(--col4);
   }
+
   .exp li ul {
     position: relative;
     box-shadow: none;
     text-indent: 24px;
     background: var(--col2);
   }
-  .exp li ul a {color: var(--col4);}
+
+  .exp li ul a {
+    color: var(--col4);
+  }
 
   .hid,
   header {
