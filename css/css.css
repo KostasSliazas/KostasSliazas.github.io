@@ -424,7 +424,7 @@ h2 {
   text-transform: lowercase;
   z-index: 200;
   white-space: nowrap;
-  padding-bottom: 12px
+  padding: 12px 0
 }
 
 a {
@@ -816,7 +816,7 @@ h2:before {
 
 h2:after {
   margin: -2px 0 0 10%;
-  transform: skewX(45deg);
+  transform: skewX(-45deg);
 }
 
 #leftcolumn p {
