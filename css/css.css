@@ -217,7 +217,7 @@
   content: "\e909";
   left: 32px;
   position: relative;
-  color: var(--col1)
+  color: var(--col4)
 }
 
 .icon-prop:before {
@@ -941,7 +941,6 @@ nav {
 
 .exp li {
   position: relative;
-  padding: 1px 0 0;
 }
 
 
@@ -1005,14 +1004,14 @@ ul {
     margin: 0 auto
   }
 
-  .exp li ul li:before {
+  .exp li ul li::before {
     content: '';
     position: absolute;
     height: 1px;
-    width: 80%;
+    width: 100%;
     border-top: 1px solid var(--col3);
     border-radius: 100%;
-    left: 10%;
+    left: 0;
     box-sizing: border-box;
   }
 
@@ -1020,17 +1019,17 @@ ul {
   #menus>li:after {
     content: '';
     position: absolute;
-    height: 50%;
+    height: 100%;
     width: 1px;
     border-left: 1px solid var(--col3);
     border-radius: 100%;
     left: 0;
     box-sizing: border-box;
-    top: 25%;
+    top: 0;
   }
 
   #menus>li:last-child:before {
-    right: 0;
+    right: -1px;
   }
 }
 
@@ -1049,7 +1048,9 @@ ul {
 }
 
 @media only screen and (max-width:481px) {
-
+  .exp li {
+    padding: 1px 0 0;
+  }
   #menus>li:last-child:after,
   .exp li:before {
     content: '';
@@ -1069,7 +1070,10 @@ ul {
   .exp li:before {
     top: 0
   }
-
+  .exp ul li a::before {
+    content: '+';
+    padding-right: 1em;
+  }
   .act~.navwrap>.menu,
   .act~.navwrap {
     height: 100%;
