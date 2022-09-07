@@ -3,10 +3,10 @@
   --color2: #FCFBFD;
   --color3: #707c6f;
   --color4: #384537;
-  --dcolor1: #4A4A4A;
-  --dcolor2: #4A444E;
-  --dcolor3: #c2c5ae;
-  --dcolor4: #cacaca;
+  --dcolor1: #242a35;
+  --dcolor2: #13151b;
+  --dcolor3: #66FCF1;
+  --dcolor4: #46A29F;
   --col1: var(--color1);
   --col2: var(--color2);
   --col3: var(--color3);
@@ -60,7 +60,7 @@
   animation: borders .3s steps(4) 3;
 }
 #themesw:checked~.wraper #theme::before {
-  content: "\263C"
+  content: "\263C";
 }
 
 #themesw {
@@ -355,7 +355,6 @@ html {
   padding: 0 12px 12px;
   margin-bottom: 24px;
   position: relative;
-  border: 1px solid transparent;
   transition: .3s box-shadow linear, 1s filter;
 }
 
@@ -363,12 +362,12 @@ h2:before,
 h2:after,
 .wrp {
   background: var(--col2);
-  color: var(--col4);
 }
 
 .theme,
 .box {
-  background: var(--col1)
+  background: var(--col1);
+  color: var(--col4);
 }
 
 .box h2 {
@@ -804,19 +803,11 @@ header {
 h2:after,
 h2:before {
   width: 100%;
-  height: 1.5em;
+  border-top: 1px solid var(--col4);
   content: "";
-  display: block;
-}
-
-h2:before {
-  margin: 0 10% 0 0;
-  transform: skewX(-45deg);
-}
-
-h2:after {
-  margin: 0 0 0 10%;
-  transform: skewX(-45deg);
+  height: 0;
+  margin: 0 1em;
+  border-radius: 100%;
 }
 
 #leftcolumn p {
@@ -1009,7 +1000,7 @@ ul {
     position: absolute;
     height: 1px;
     width: 100%;
-    border-top: 1px solid var(--col3);
+    border-top: 1px solid var(--col4);
     border-radius: 100%;
     left: 0;
     box-sizing: border-box;
@@ -1021,7 +1012,7 @@ ul {
     position: absolute;
     height: 100%;
     width: 1px;
-    border-left: 1px solid var(--col3);
+    border-left: 1px solid var(--col4);
     border-radius: 100%;
     left: 0;
     box-sizing: border-box;
@@ -1057,7 +1048,7 @@ ul {
     position: absolute;
     height: 1px;
     width: 80%;
-    border-top: 1px solid var(--col3);
+    border-top: 1px solid var(--col4);
     border-radius: 100%;
     left: 10%;
     box-sizing: border-box;
