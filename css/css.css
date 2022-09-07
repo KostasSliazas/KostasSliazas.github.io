@@ -358,8 +358,7 @@ html {
   transition: .3s box-shadow linear, 1s filter;
 }
 
-h2:before,
-h2:after,
+
 .wrp {
   background: var(--col2);
 }
@@ -806,8 +805,7 @@ h2:before {
   border-top: 1px solid var(--col4);
   content: "";
   height: 0;
-  margin: 0 1em;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 #leftcolumn p {
