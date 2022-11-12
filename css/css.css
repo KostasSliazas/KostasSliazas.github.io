@@ -371,7 +371,9 @@ html {
 
 .box h2 {
   font-size: 1em;
+  text-align: right;
   overflow: hidden;
+  display:block;
 }
 
 #threed,
@@ -763,7 +765,9 @@ header {
 .dots {
   background: linear-gradient(45deg, var(--col3) 0, transparent 1px) 0 0/7px 7px, var(--col2);
 }
-
+.kostazzz::after {
+  content: "\2709 email";
+}
 .zero {
   height: 0
 }
@@ -797,15 +801,6 @@ header {
 .path2 {
   font-size: 1.5em;
   background: linear-gradient(0deg, rgba(255, 215, 0, 1) 50%, rgba(0, 87, 183, 1) 50%);
-}
-
-h2:after,
-h2:before {
-  width: 100%;
-  border-top: 1px solid var(--col4);
-  content: "";
-  height: 0;
-  border-radius: 50%;
 }
 
 #leftcolumn p {
