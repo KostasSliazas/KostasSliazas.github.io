@@ -1,12 +1,12 @@
 :root {
-  --color1: #FEFEFE;
-  --color2: #FCFBFD;
-  --color3: #707c6f;
-  --color4: #384537;
-  --dcolor1: #242a35;
-  --dcolor2: #13151b;
-  --dcolor3: #68fcf2;
-  --dcolor4: #49aca8;
+--color1: #FFF;
+--color2: #e4ebf2;
+--color3: #111d2b;
+--color4: #334457;
+--dcolor1: #284255;
+--dcolor2: #021B2E;
+--dcolor3: #FBFCFD;
+--dcolor4: #99A3AA;
   --col1: var(--color1);
   --col2: var(--color2);
   --col3: var(--color3);
@@ -303,8 +303,9 @@ ul {
 
 
 body {
+  letter-spacing: 1px;
   overflow-x: hidden;
-  font: 16px/1.5em 'Electrolize', sans-serif;
+  font: 14px/1.5em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -352,8 +353,8 @@ html {
 }
 
 .box {
-  padding: 0 12px 12px;
-  margin-bottom: 24px;
+  padding: 0 1em 1em;
+  margin-bottom: 1em;
   position: relative;
   transition: .3s box-shadow linear, 1s filter;
 }
@@ -361,6 +362,7 @@ html {
 
 .wrp {
   background: var(--col2);
+  background-blend-mode: luminosity;
 }
 
 .theme,
@@ -370,8 +372,14 @@ html {
 }
 
 .box h2 {
-  font-size: 1em;
+  font-size: 10px;
+  text-align: right;
   overflow: hidden;
+  display: flex;
+  place-content: end;
+  place-items: center;
+  text-transform: full-width;
+  letter-spacing: 0;
 }
 
 #threed,
@@ -412,17 +420,8 @@ h5 {
 }
 
 h2 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  width: 100%;
   text-transform: lowercase;
-  z-index: 200;
   white-space: nowrap;
-  padding: 12px 0
 }
 
 a {
@@ -433,16 +432,13 @@ a:focus {
   outline: 0
 }
 
-a:visited,
-a:active,
-a:focus,
-a:link {
-  text-decoration: 1px underline dotted;
+a {
+  text-decoration: none;
+  cursor: pointer
 }
 
 a:hover {
   text-decoration: 1px underline solid;
-  cursor: pointer
 }
 
 .imgDiv span::before {
@@ -556,7 +552,7 @@ a:hover {
 
 #down,
 #imgTotal {
-  padding: 0 12px;
+  padding: 0 1em;
   bottom: 0
 }
 
@@ -655,6 +651,7 @@ a:hover {
 }
 
 .paveik span {
+  box-shadow: 0 0 0 1px var(--col2);
   font-size: 1em;
   overflow: hidden
 }
@@ -691,8 +688,8 @@ a:hover {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row dense;
-  grid-gap: 12px;
-  padding-bottom: 12px
+  grid-gap: 1em;
+  padding-bottom: 1em
 }
 
 .imgDiv img {
@@ -700,7 +697,6 @@ a:hover {
   cursor: pointer;
   text-align: center;
   background: #fff;
-
 }
 
 
@@ -724,8 +720,8 @@ header {
   scrollbar-width: thin;
   bottom: 0;
   top: 0;
-  padding-top: 72px;
-  scroll-padding-top: 72px;
+  padding-top: 5em;
+  scroll-padding-top: 5em;
   overflow-x: hidden
 }
 
@@ -743,12 +739,17 @@ header {
   letter-spacing: .15em;
   margin: 0 auto;
   display: inline-block;
-  padding: 0 1em;
+  padding: 0 10em;
+  background: var(--col1);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+  opacity: .7;
 }
 
 .header h1 {
+  font-size: 8px;
   font-weight: normal;
-  font-size: 1em;
+  text-transform: full-width;
+  font-family: monospace;
 }
 
 header {
@@ -756,7 +757,6 @@ header {
   overflow: hidden;
   transition: .1s height;
   position: relative;
-  background: var(--col2);
   z-index: 998;
 }
 
@@ -781,7 +781,7 @@ header {
   height: 100%;
   text-align: right;
   position: relative;
-  color: var(--col3);
+  color: var(--col4);
 }
 
 #logo {
@@ -816,12 +816,11 @@ header {
 
 #rightcolumn {
   width: 35%;
-  padding-left: 24px
+  padding-left: 1em
 }
 
 #rightcolumn p {
   text-transform: lowercase;
-  letter-spacing: 1px;
 }
 
 #footer {
@@ -861,7 +860,6 @@ nav {
 }
 
 #main {
-  padding: 24px 0;
   min-height: 480px
 }
 
@@ -889,7 +887,7 @@ nav {
 
 .menu {
   background: var(--col1);
-  padding: 0 24px;
+  padding: 0 2em;
   text-align: right;
 }
 
@@ -928,14 +926,16 @@ nav {
 
 .nav a {
   line-height: inherit;
-  font-size: 12px;
-  padding: 0 12px;
+  font-size: 9px;
+  padding: 0 1em;
   text-align: left;
   display: block;
   transform: translateZ(0);
-  text-transform: uppercase;
+  text-transform: full-width;
   text-decoration: none;
   color: var(--col4);
+  letter-spacing: 0;
+  font-family: monospace;
 }
 
 .nav a:hover {
@@ -953,8 +953,7 @@ nav {
   border-right: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   padding: 2px;
-  margin: 0 0 0 4px;
-  transform-origin: left;
+  margin: 1px;
   transform: rotateZ(-45deg)
 }
 
@@ -1016,7 +1015,9 @@ ul {
 }
 
 @media screen and (max-width:720px) {
-
+  a,button{
+    margin: 0.25em;
+  }
   #leftcolumn span,
   .box {
     scroll-margin-top: 12px
@@ -1030,6 +1031,11 @@ ul {
 }
 
 @media only screen and (max-width:481px) {
+  body{overflow-x: hidden;}
+  #rightcolumn p {
+    margin: .25em;
+  }
+  body{font-size: 16px;}
   .exp li {
     padding: 1px 0 0;
   }
@@ -1053,7 +1059,7 @@ ul {
     top: 0
   }
   .exp ul li a::before {
-    content: '+';
+    content: '::';
     padding-right: 1em;
   }
   .act~.navwrap>.menu,
@@ -1072,16 +1078,18 @@ ul {
   }
 
   nav {
-    padding-top: 48px;
+    padding-top: 3em
   }
 
   .nav a {
-    padding: 0 72px
+    margin:0;
+    padding: 0 5em
   }
 
   .wrp {
-    scroll-padding-top: 48px;
-    padding-top: 48px
+    overflow-x: hidden;
+    scroll-padding-top: 3em;
+    padding-top: 4em
   }
 
   .navwrap {
@@ -1245,7 +1253,7 @@ ul {
 .imgcontainer img {
   height: 100%;
   width: 100%;
-  object-fit: cover
+  object-fit: contain
 }
 
 .imgcontainer .actim {
@@ -1356,3 +1364,4 @@ ul {
   z-index: 999;
   position: relative;
 }
+
