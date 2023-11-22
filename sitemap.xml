@@ -4,12 +4,99 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
 <url>
-  <loc>https://kostassliazas.github.io/</loc>
-  <lastmod>2022-06-22T16:27:55+00:00</lastmod>
+	<loc>https://kostassliazas.github.io/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
+<url>
+	<loc>https://kostassliazas.github.io/border-radius/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/gradient-generator-2/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/drunktextmaker/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/gradients/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/kcolorandom/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/code-to-html/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/colorzebra/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/border/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/todo-app/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/todo2/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/links-webpage/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/random-winner-name/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/tools/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/text-shadow/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/game-cards.github.io/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/burundukas/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/links/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://kostassliazas.github.io/questions/</loc>
+	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
 </urlset>
