@@ -704,6 +704,7 @@ a:hover {
   width: 100%;
   overflow-x: hidden;
   scrollbar-width: thin;
+  display:block !important;
   position: relative
 }
 
