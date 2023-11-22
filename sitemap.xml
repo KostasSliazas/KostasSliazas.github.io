@@ -5,98 +5,143 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-	<loc>https://kostassliazas.github.io/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>1.0</priority>
+<loc>https://kostassliazas.github.io</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/border-radius/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/gradient-generator-2/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/border-radius/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/drunktextmaker/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/gradient-generator-2/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/gradients/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/drunktextmaker/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/kcolorandom/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/gradients/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/code-to-html/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/kcolorandom/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/colorzebra/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/code-to-html/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/border/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/colorzebra/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/todo-app/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/calculator/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/todo2/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/border/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/links-webpage/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/todo-app/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/random-winner-name/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/todo2/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/tools/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/image-gallery/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/text-shadow/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/links-webpage/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/game-cards.github.io/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/tools/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/burundukas/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/text-shadow/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/links/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/downloads/template.zip</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-	<loc>https://kostassliazas.github.io/questions/</loc>
-	<lastmod>2023-11-22T22:23:04+01:00</lastmod>
-	<priority>0.8</priority>
+<loc>https://kostassliazas.github.io/downloads/hameleon.zip</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/html-template/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/game-cards.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/burundukas/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/links/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/questions/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/gallery/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/colorzebra.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/gradients.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>https://kostassliazas.github.io/gradient-generator-2.github.io/</loc>
+<priority>1.0</priority>
+<changefreq>monthly</changefreq>
 </url>
 </urlset>
