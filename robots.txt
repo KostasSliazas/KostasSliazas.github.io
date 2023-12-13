@@ -7,4 +7,5 @@ Disallow: /svg-examples/
 Disallow: /drunktextmaker.github.io/
 Disallow: /text-shadow.github.io/
 Disallow: /image-gallery.io/
+Disallow: /burundukas.github.io/
 Sitemap: https://kostassliazas.github.io/sitemap.xml
