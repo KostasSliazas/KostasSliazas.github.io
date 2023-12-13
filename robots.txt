@@ -3,4 +3,8 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
+Disallow: /svg-examples/
+Disallow: /drunktextmaker.github.io/
+Disallow: /text-shadow.github.io/
+Disallow: /image-gallery.io/
 Sitemap: https://kostassliazas.github.io/sitemap.xml
