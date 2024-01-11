@@ -3,14 +3,4 @@ Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /svg-examples/
-Disallow: /drunktextmaker.github.io/
-Disallow: /text-shadow.github.io/
-Disallow: /image-gallery.io/
-Disallow: /burundukas.github.io/
-Disallow: /landing.github.io/
-Disallow: /tools.io/
-Disallow: /calculator.github.io/
-Disallow: /gradient-generator-2.github.io/
-
 Sitemap: https://kostassliazas.github.io/sitemap.xml
