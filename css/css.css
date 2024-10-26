@@ -95,14 +95,13 @@
   -webkit-transform-origin: 24px;
   transform-origin: 24px;
   text-align: center;
-  -webkit-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+-webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
   z-index: 998;
   border-radius: 50%;
   line-height: 48px;
@@ -194,7 +193,6 @@
   line-height: 1;
   margin: 0 6px 0 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-pers:before {
@@ -307,13 +305,12 @@ body {
   overflow-x: hidden;
   font: 14px/1.5em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
 }
 
 .hoverbody .wrp #main {
@@ -874,7 +871,6 @@ nav {
   position: relative;
   z-index: 999;
   -webkit-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1231,7 +1227,7 @@ ul {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
 }
 
 .imgcontainer a {
