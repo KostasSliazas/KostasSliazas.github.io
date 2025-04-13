@@ -7,20 +7,20 @@ Overview
 This repository serves as a visual portfolio showcasing hand-drawn SVGs, animated graphics, code-generated visuals, and static PNG artworks. Each piece is presented in a lightweight, browser-friendly format using standard web technologies.
 Contents
 
-    SVG illustrations — Clean, scalable vector graphics made by hand or code
+SVG illustrations — Clean, scalable vector graphics made by hand or code
 
-    Animated graphics — Visuals animated with JavaScript or CSS
+Animated graphics — Visuals animated with JavaScript or CSS
 
-    PNG artworks — High-resolution raster images and designs
+PNG artworks — High-resolution raster images and designs
 
-    Interactive pieces — JavaScript-powered experiments with motion or interaction
+Interactive pieces — JavaScript-powered experiments with motion or interaction
 
 Tools & Tech
 
-    HTML5 for structure and embedding visuals
+HTML5 for structure and embedding visuals
 
-    JavaScript for animations and interactions
+JavaScript for animations and interactions
 
-    SVG for vector-based drawings and effects
+SVG for vector-based drawings and effects
 
-    PNG for detailed graphics and illustrations
+PNG for detailed graphics and illustrations
