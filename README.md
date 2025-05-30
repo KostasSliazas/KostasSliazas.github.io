@@ -1,24 +1,42 @@
-# landing.github.io
+# Home page
 
-## Home Page
+[![License](https://img.shields.io/github/license/KostasSliazas/kostassliazas.github.io)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/KostasSliazas/kostassliazas.github.io?style=social)](https://github.com/KostasSliazas/kostassliazas.github.io/stargazers)
+[![Forks](https://img.shields.io/github/forks/KostasSliazas/kostassliazas.github.io?style=social)](https://github.com/KostasSliazas/kostassliazas.github.io/forks)
+[![Issues](https://img.shields.io/github/issues/KostasSliazas/kostassliazas.github.io)](https://github.com/KostasSliazas/kostassliazas.github.io/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/KostasSliazas/kostassliazas.github.io)](https://github.com/KostasSliazas/kostassliazas.github.io/commits)
+
+## Table of Contents
+
+* [Description](#description)
+* [Features](#features)
+* [License](#license)
+* [Contributing](#contributing)
+* [Contributors](#contributors)
+
+
+## Description
 
 A collection of custom-made graphics and visual artworks. This portfolio highlights creative experiments, visual concepts, and interactive illustrations crafted for the web.
+## Features
 
-## Overview
+- SVG illustrations — Clean, scalable vector graphics made by hand or code
+- Animated graphics — Visuals animated with JavaScript or CSS
+- PNG artworks — High-resolution raster images and designs
+- Interactive pieces — JavaScript-powered experiments with motion or interaction
+## License
 
-This repository serves as a visual portfolio showcasing hand-drawn SVGs, animated graphics, code-generated visuals, and static PNG artworks. Each piece is presented in a lightweight, browser-friendly format using standard web technologies.
+This project is licensed under the [MIT License](https://github.com/KostasSliazas/kostassliazas.github.io/blob/HEAD/LICENSE).
+## Contributing
 
-## Contents
+To contribute, please fork this repository, create a new branch, and submit a pull request.
 
-- **SVG illustrations** — Clean, scalable vector graphics made by hand or code
-- **Animated graphics** — Visuals animated with JavaScript or CSS
-- **PNG artworks** — High-resolution raster images and designs
-- **Interactive pieces** — JavaScript-powered experiments with motion or interaction
+Clone the repository:
+```bash
+git clone https://github.com/KostasSliazas/kostassliazas.github.io
+```
 
-## Tools & Tech
 
-- **HTML5** for structure and embedding visuals
-- **JavaScript** for animations and interactions
-- **SVG** for vector-based drawings and effects
-- **PNG** for detailed graphics and illustrations
+## Contributors
 
+- [@KostasSliazas](https://github.com/KostasSliazas)
